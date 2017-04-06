@@ -1,6 +1,5 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpModule, JsonpModule} from '@angular/http';
 
 import { AppComponent }  from './app.component';
 import { NavbarComponent }  from './components/navbar/navbar.component';
@@ -12,7 +11,7 @@ import { MoviesComponent }  from './components/pages/movies.component';
 import {routing} from './app.routing';
 
 @NgModule({
-  imports:      [ BrowserModule, routing, HttpModule, JsonpModule ],
+  imports:      [ BrowserModule, routing],
   declarations: [ AppComponent, NavbarComponent, JumbotronComponent, AboutComponent, HomeComponent, ContactComponent, MoviesComponent ],
   bootstrap:    [ AppComponent ]
 })
